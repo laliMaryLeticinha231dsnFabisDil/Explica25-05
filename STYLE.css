@@ -1,0 +1,197 @@
+/*resset css*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: 'mont';
+    src: url(Assets/Montserrat-VariableFont_wght.ttf);
+}
+
+
+/* HEADER*/
+
+.logo {
+    width: 18.75rem;
+
+}
+
+.item {
+    font: 600px 1.875rem 'Mont', sans-serif;
+    color: #678471;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hearder {
+    margin: 0 30px;
+}
+
+/*divisão*/
+
+.divisão {
+    height: 1px;
+    background-color: #47564C;
+    margin: 20PX 0;
+
+}
+
+/*NOSSA COMIDA*/
+
+.NossaComida {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.container {
+    display: flex;
+    margin: 0 80px;
+
+}
+
+.titulo {
+
+    font: 500 33px 'Mont', sans-serif;
+    color: #47564C;
+    margin-bottom: 30px;
+}
+
+.texto {
+    font: 300 20px 'Mont', sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+.conteudo {
+    margin: 40px 0 0 40px;
+}
+
+/*nossa Equipe*/
+
+.panelas {
+    width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 30px;
+}
+
+/*nosso cárdapio*/
+.comida {
+    width: 150px;
+}
+
+.pratos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.prato {
+    border: 1px solid black;
+    width: 400px;
+    border-radius: 8px;
+    padding: 8px 11px;
+    margin: 20px;
+}
+
+.cardapio-conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome {
+    margin: 0 80px;
+    font: 700 18px 'mont', sans-serif;
+}
+
+.descrição {
+    font: 400 14px 'mont' sans-serif;
+    text-align: justify;
+}
+
+
+/*rodapé*/
+
+#contato {
+    background-color: #678471;
+padding: 30px;
+}
+
+.icone {
+    width: 40px;
+    padding: 8px;
+    
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-right: 80px;
+}
+
+.name .amm {
+    font: 500 35px 'mont' sans-serif;
+    color: #fff;
+}
+
+.name .cs {
+    font: 500 20px 'mont', sans-serif;
+    color: #FFA36A;
+   
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.rede{
+    display: flex;
+    text-align: center;
+}
+
+.endereço-nome {
+    font: 300 18px 'mont', sans-serif;
+    color: #fff;
+    text-align: justify;
+
+}
+
+.endereço-titulo {
+    font: 500 25px 'mont', sans-serif;
+    color: #fff;
+    text-align: justify;
+}
+
+#contato .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rede-nome {
+    font: 300 18 'mont', sans-serif;
+    color:#fff;
+    margin-top: 4px;
+}
