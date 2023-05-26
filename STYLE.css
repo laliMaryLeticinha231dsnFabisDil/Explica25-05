@@ -133,13 +133,13 @@ img {
 
 #contato {
     background-color: #678471;
-padding: 30px;
+    padding: 30px;
 }
 
 .icone {
     width: 40px;
     padding: 8px;
-    
+
 }
 
 .name {
@@ -157,7 +157,7 @@ padding: 30px;
 .name .cs {
     font: 500 20px 'mont', sans-serif;
     color: #FFA36A;
-   
+
 }
 
 .redes {
@@ -166,7 +166,7 @@ padding: 30px;
     width: 600px;
 }
 
-.rede{
+.rede {
     display: flex;
     text-align: center;
 }
@@ -192,6 +192,128 @@ padding: 30px;
 
 .rede-nome {
     font: 300 18 'mont', sans-serif;
-    color:#fff;
+    color: #fff;
     margin-top: 4px;
 }
+@media screen and (max-width: 400px) {
+    .container{
+    margin: 0;
+    padding: 0;
+    }
+        
+    .NossaComida{ 
+    width: 90vw;
+    height: auto;
+    text-align: center;    
+
+}
+
+.imagem{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.titulo, .item{
+    font: 500px 23px 'mont', sans-serif;
+}
+.tex7{
+    font: 300 15px 'mont,', sans-serif
+}
+
+.item{
+    font: 400 20px 'mont', sans-serif;
+    padding: 0 15px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.logo{
+    width:70vw;
+    height: auto;
+    margin-left: 25px;
+}
+.conteudo{
+    margin: 0 20px;
+    padding: 0;
+    border: 10;
+}
+#header ,menu{
+    display: block;
+}
+.prato{
+    width: 80vw;
+    margin: 0;
+
+}
+.cardapio{
+    margin: 0 20px;
+
+}
+#nossaEquipe .container{
+    display: flex;
+    flex-direction:column-reverse ;
+
+}
+.section{
+    margin: 20px 0 0;
+}
+#contato {
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+#contato .container{
+    display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+margin: 0;
+padding: 0;
+border: 0;
+}
+.name{
+    width: 90vw;
+    margin: 0;
+}  
+.name .amm{
+    font: 500 30px 'mont' , sans-serif;
+    margin: 10px 0 0;
+}
+.amm{
+   font: 600px 'mont', sans-serif;
+   margin: 10px 0 0 ;
+   
+}
+.cs{
+    font: 400 40px 'mont', sans-serif;
+}
+
+.redes{
+    display: block;
+    margin: 20px 0;
+
+}
+.rede{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 10px 0;
+}
+
+.endereço{
+    width: 90vw;
+    margin-bottom: ;
+}
+.item:hover{
+    font: 400 8px 'mont' sans-serif;
+    color: #FFA36A;
+}
+  }
+
+  
