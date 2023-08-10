@@ -1,97 +1,102 @@
-.container{
+.container {
     margin: 0;
     padding: 0;
     display: block;
     border: 0;
-    }
-        
-    .nossaComida , .panela{
-        width: 90vw;
-        height: auto;
-        text-align: center;
-        margin: 0;
-    }
-    .nossaComida{ 
+}
+
+.nossaComida,
+.panela {
     width: 90vw;
     height: auto;
-    text-align: center;    
+    text-align: center;
+    margin: 0;
+}
+
+.nossaComida {
+    width: 90vw;
+    height: auto;
+    text-align: center;
 
 }
 
-.imagem{
+.imagem {
     text-align: center;
 }
 
-#nossaComida .titulo{
-    font: 300 23px 'mont', sans-serif;;
+#nossaComida .titulo {
+    font: 300 23px 'mont', sans-serif;
+    ;
     margin: 15px 0;
-   
-    
+
+
 }
 
-#nossaEquipe .titulo{
+#nossaEquipe .titulo {
     font: 500 23px 'mont', sans-serif;
     margin: 15px 0;
-    
+
 }
 
-#cardapio .titulo{
+#cardapio .titulo {
     font: 500 23px 'mont', sans-serif;
-    margin: 15px 0 ;
-   text-align: center;
+    margin: 15px 0;
+    text-align: center;
 }
 
-.texto{
+.texto {
     font: 300 15px 'mont,', sans-serif;
-    
+
 }
 
-#header .menu .item{
+#header .menu .item {
     font: 500 23px 'mont', sans-serif;
     padding: 0 4px;
     text-align: center;
 
 }
-.item{
+
+.item {
     text-align: center;
 }
 
-.menu .item:hover{
+.menu .item:hover {
     font: 400 8px 'mont', sans-serif;
     color: #678471;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-#header .logo{
+
+#header .logo {
     width: 70vw;
     height: auto;
 }
 
-.conteudo{
+.conteudo {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-.prato{
+.prato {
     width: 80vw;
     margin: 10px 0;
 }
 
-.cardapio{
-    margin: 0 ;
+.cardapio {
+    margin: 0;
 }
 
-#nossaEquipe .container{
+#nossaEquipe .container {
     display: flex;
-    flex-direction:column-reverse ;
+    flex-direction: column-reverse;
 }
 
-.section{
+.section {
     margin: 20px 0 0;
 }
 
@@ -103,57 +108,88 @@
 
 }
 
-#contato .container{
+#contato .container {
     display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-margin: 0;
-padding: 0;
-border: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 
-.name{
+.name {
     width: 90vw;
     text-align: center;
     margin: 10px 0 0;
-}  
-.name .amm{
-    font: 500 30px 'mont' , sans-serif;
+}
+
+.name .amm {
+    font: 500 30px 'mont', sans-serif;
     margin: 10px 0 0;
 }
 
-.redes{
+.redes {
     display: block;
     margin: 20px 0;
 
 }
-.rede{
+
+.rede {
     display: flex;
     text-align: center;
     justify-content: center;
 
 }
 
-.endereco{
+.endereco {
     width: 90vw;
-    margin-bottom: 25px ;
+    margin-bottom: 25px;
     text-align: center;
 }
-   #header .menu {
+
+#header .menu {
     display: block;
 }
 
-#contato, .name, .redes, .endereco{
+#contato,
+.name,
+.redes,
+.endereco {
     margin: 0;
     padding: 0;
     border: 0;
 
 }
- .logo {
+
+.logo {
     width: 30vw;
     height: auto;
     margin-left: 10px;
 }
 
-    
+.imagem,
+.coxinha {
+    padding: auto;
+    border: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.item {
+    align-items: center;
+}
+
+.img,
+.coxinha {
+    left: auto;
+    height: 500px;
+    left: 600px;
+}
+
+.coxinha,
+.conteudo {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
