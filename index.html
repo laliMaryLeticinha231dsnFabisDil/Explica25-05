@@ -5,198 +5,211 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 768px)">
-    <title> comida Caseira </title>
-    <link rel="stylesheet" href="STYLE.css">
-    <link rel="icon" href="Imagens/icone.svg">
+    <title>Comida Caseira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css" media="screen and (max-width:768px)">
+    <link rel="icon" href="Img/icone.svg">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="smartphone.css">
+    <script src="https://kit.fontawesome.com/cc3f8c12e5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="header">
         <nav class="menu">
-            <div class="logo">
-                <img src="Imagens/logo.png" alt="logo" class="logo">
-
-            </div>
-            <a href="header" class="item">INICIO </a>
-            <a href="#nossaComida" class="item">NOSSA COMIDA </a>
-            <a href="#nossaEquipe" class="item"> NOSSA EQUIPE</a>
-            <a href="#cardapio" class="item">NOSSO CARDAPIO</a>
-            <a href="#contato" class="item"> CONTATO</a>
+            <!-- <div class="imagem">
+                <img src="Imagens/logo.png" alt="Logo" class="logo">
+            </div> -->
+           
+                <a href="#header" class="item">HOME</a>
+                <a href="#nossaComida" class="item">NOSSA COMIDA</a>
+                <a href="#nossaEquipe" class="item">NOSSA EQUIPE</a>
+                <a href="#cardapio" class="item">NOSSO CARDÁPIO</a>
+                <a href="#contato" class="item">CONTATO</a>
+            </nav>
+            <a class="menu-barras" onclick="mostraMenu()">
+                <span id="icone" class="fas fa-bars"> </span>
+            </a>
+              
         </nav>
+
+<script>
+        function mostraMenu() {
+            var menu = document.getElementById("menu");
+            var icone = document.getElementById("icone");
+
+            if (getComputedStyle(menu).display == 'none') {
+                menu.style.display = "flex";
+                icone.classlist.remove("fa-bars");
+                icone.classlist.add("fa-times");
+            } else {
+                menu.style.display = "none";
+                icone.classlist.remove("fa-times")
+                icone.classlist.add("fa-bars")
+            }
+        }
+    </script>
+
+
     </header>
 
-    <!--fim de cabeçalho-->
-    <!--Divisão-->
-    <div class="divisão"></div>
-    <!--FIM DIVISÃO-->
+    
 
-    <!--main-->
+
+
+
+
+
+    <!-- FIM CABEÇALHO -->
+    <!-- DIVISÃO -->
+    <div class="divisao"></div>
+    <!-- FIM DA DIVISÃO -->
+    <!-- MAIN -->
     <main id="main">
-        <!--nossa comida-->
+        <!-- NOSSA COMIDA -->
         <section id="nossaComida" class="section">
             <div class="container">
-                <div class=" imagem">
-                    <img src="Imagens/01.png" alt="mulher cozihando" class="coxinha" >
+                <div class="imagem">
+                    <img src="Imagens/01.png" mulher cozinhando class="nossaComida">
                 </div>
                 <div class="conteudo">
-                    <h2 class="titulo"> NOSSA COMIDA CASEIRA </h2>
-                    <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, earum sequi
-                        consectetur animi aperiam incidunt error dolor! Vero, itaque molestias deleniti laboriosam velit
-                        nemo, accusamus sapiente cupiditate, excepturi odio adipisci.</p>
+                    <h2 class="titulo">NOSSA COMIDA CASEIRA</h2>
+                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quaerat animi
+                        pariatur odio deleniti error voluptatum amet quisquam dolores nobis iusto aperiam, velit minima
+                        commodi, quod a tempore tempora similique. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Tempore accusantium officiis esse molestiae architecto quibusdam temporibus sunt eos
+                        pariatur! Quaerat, dolor quos temporibus blanditiis nostrum atque praesentium vel fugiat quas?
+                    </p>
                 </div>
             </div>
         </section>
-        <!--FIM NOSSA COMIDA--->
-        <!--INICIO NOSSA EQUIPE-->
+        <!-- FIM NOSSA COMIDA -->
+        <!-- INICIO NOSSA EQUIPE -->
         <section id="nossaEquipe" class="section">
             <div class="container">
                 <div class="conteudo">
-                    <h2 class="titulo"> NOSSA EQIPE</h2>
-
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur magnam
-                        aperiam
-                        neque ipsam, id perferendis, temporibus quidem laborum velit blanditiis incidunt cumque!
-                        Placeat,
-                        minus! Deleniti commodi nisi omnis similique!</p>
-                    <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus officiis dolores
-                        illo vero impedit in? Fugiat illo blanditiis ullam itaque quasi earum commodi aspernatur
-                        possimus
-                        pariatur, ut exercitationem repellat dolore.</p>
-                    <br><br>
+                    <h2 class="titulo">NOSSA EQUIPE</h2>
+                    <P class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In magni perferendis
+                        placeat soluta aliquid voluptatum rerum explicabo quos porro, sapiente assumenda error iusto
+                        illo magnam distinctio, nulla molestiae, numquam vel.</P>
+                    <P class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In magni perferendis
+                        placeat soluta aliquid voluptatum rerum explicabo quos porro, sapiente assumenda error iusto
+                        illo magnam distinctio, nulla molestiae, numquam vel.</P>
                 </div>
                 <div class="imagem">
                     <img src="Imagens/02.png" alt="panelas" class="panela">
                 </div>
             </div>
         </section>
-        <!--fim nossa equipe-->
-        <!--inicio cardapio-->
-        <section id="cardapio" class="section"></section>
-        <div class="cardapio">
-            <h2 class="titulo"> NOSSO CARDAPIO</h2>
-            <div class="pratos">
-                <div class="prato">
-                    <div class="imagem">
-                        <img src="Imagens/prato1.png" alt=" macarrao" class="comida">
+        <!-- FIM NOSSA EQUIPE -->
+        <!-- INÍCIO CARDÁPIO -->
+        <section id="cardapio" class="section">
+            <div class="cardapio">
+                <h2 class="titulo">NOSSO CARDÁPIO</h2>
+                <div class="pratos">
+                    <div class="prato">
+                        <div class="imagem">
+                            <img src="Imagens/prato4.png" macarrao" class="comida">
+                            <div class="cardapio-conteudo">
+                                <h4 class="nome">Lorem Ipsum</h4>
+                                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat, amet eum tempora aut.</p>
+                                <p class="preco">R$ XXX.XX</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cardapio-conteudo">
-                        <h4 class="nome"> lorem ipsum</h4>
-                        <p class="descrição">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor magnam,
-                            quas</p>
-                        <p class="preço">R$ XXXX</p>
+                    <div class="prato">
+                        <div class="imagem">
+                            <img src="Imagens/prato2.png" alt="macarrao" class="comida">
+                            <div class="cardapio-conteudo">
+                                <h4 class="nome">Lorem Ipsum</h4>
+                                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat, amet eum tempora aut.</p>
+                                <p class="preco">R$ XXX.XX</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-
-
-                <div class="prato">
-                    <div class="imagem">
-                        <img src="Imagens/prato2.png" alt=" macarrao" class="comida">
+                    <div class="prato">
+                        <div class="imagem">
+                            <img src="Imagens/prato3.png" alt="macarrao" class="comida">
+                            <div class="cardapio-conteudo">
+                                <h4 class="nome">Lorem Ipsum</h4>
+                                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat, amet eum tempora aut.</p>
+                                <p class="preco">R$ XXX.XX</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cardapio-conteudo">
-                        <h4 class="nome"> lorem ipsum</h4>
-                        <p class="descrição">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor magnam,
-                            quas</p>
-                        <p class="preço">R$ XXXX</p>
+                    <div class="prato">
+                        <div class="imagem">
+                            <img src="Imagens/prato4.png" alt="macarrao" class="comida">
+                            <div class="cardapio-conteudo">
+                                <h4 class="nome">Lorem Ipsum</h4>
+                                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat, amet eum tempora aut.</p>
+                                <p class="preco">R$ XXX.XX</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-
-
-                <div class="prato">
-                    <div class="imagem">
-                        <img src="Imagens/prato3.png" alt=" macarrao" class="comida">
+                    <div class="prato">
+                        <div class="imagem">
+                            <img src="Imagens/prato5.png" alt="macarrao" class="comida">
+                            <div class="cardapio-conteudo">
+                                <h4 class="nome">Lorem Ipsum</h4>
+                                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat, amet eum tempora aut.</p>
+                                <p class="preco">R$ XXX.XX</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cardapio-conteudo">
-                        <h4 class="nome"> lorem ipsum</h4>
-                        <p class="descrição">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor magnam,
-                            quas</p>
-                        <p class="preço">R$ XXXX</p>
-                    </div>
-                </div>
-
-
-
-                <div class="prato">
-                    <div class="imagem">
-                        <img src="Imagens/prato4.png" alt=" macarrao" class="comida">
-                    </div>
-                    <div class="cardapio-conteudo">
-                        <h4 class="nome"> lorem ipsum</h4>
-                        <p class="descrição">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor magnam,
-                            quas</p>
-                        <p class="preço">R$ XXXX</p>
-                    </div>
-                </div>
-
-
-
-                <div class="prato">
-                    <div class="imagem">
-                        <img src="Imagens/prato5.png" alt=" macarrao" class="comida">
-                    </div>
-                    <div class="cardapio-conteudo">
-                        <h4 class="nome"> lorem ipsum</h4>
-                        <p class="descrição">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor magnam,
-                            quas</p>
-                        <p class="preço">R$ XXXX</p>
-                    </div>
-                </div>
-
-
-
-                <div class="prato">
-                    <div class="imagem">
-                        <img src="Imagens/prato6.png" alt=" macarrao" class="comida">
-                    </div>
-                    <div class="cardapio-conteudo">
-                        <h4 class="nome"> lorem ipsum</h4>
-                        <p class="descrição">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor magnam,
-                            quas</p>
-                        <p class="preço">R$ XXXX</p>
+                    <div class="prato">
+                        <div class="imagem">
+                            <img src="Imagens/prato6.png" alt="macarrao" class="comida">
+                            <div class="cardapio-conteudo">
+                                <h4 class="nome">Lorem Ipsum</h4>
+                                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat, amet eum tempora aut.</p>
+                                <p class="preco">R$ XXX.XX</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
         </section>
+        <!-- FIM DO CARDÁPIO -->
     </main>
-
-    <!--RODAPÉ-->
+    <!-- RODAPÉ -->
     <footer>
         <section id="contato" class="section">
             <div class="container">
                 <div class="name">
-                    <h1 class="amm">Ana Mônica Matos</h1>
-                    <br>
+                    <h1 class="amm">ANA MÔNICA MATOS</h1>
                     <h4 class="cs">COMIDA CASEIRA</h4>
                 </div>
-
                 <div class="redes">
                     <div class="rede">
-                        <img src="Imagens/insta.svg" alt="instagram" class="instagram icone">
-                        <h4 class="rede-nome"> AMM_COMIDACASEIRA</h4>
-                    </div>
-
-                    <div class="rede">
-                        <img src="Imagens/facebook.svg" alt="facebook" class="facebook icone">
+                        <img src="Imagens/insta.svg" alt="logo instagram" class="instagram icone">
                         <h4 class="rede-nome">AMM_COMIDACASEIRA</h4>
                     </div>
-
                     <div class="rede">
-                        <img src="Imagens/telefone.svg" alt="telefone" class="telefone icone">
-                        <h4 class="rede-nome"> (11) 9591843-71</h4>
+                        <img src="Imagens/facebook.svg" alt="logo facebook" class="facebook icone">
+                        <h4 class="rede-nome">AMM_COMIDACASEIRA</h4>
                     </div>
-
-                    <div class="endereco">
-                        <h5 class="endereço-titulo">Endereço:</h5>
-                        <p class="endereço-nome"> Rua: João de siqueira Afonso, 13 - Jadim Lageado, Guaianases - SP</p>
+                    <div class="rede">
+                        <img src="Imagens/telefone.svg" alt="icone telefone" class="telefone icone">
+                        <h4 class="rede-nome">(11) 94825-3319</h4>
                     </div>
+                </div>
+                <div class="endereco">
+                    <h4 class="endereco-titulo">ENDEREÇO:</h4>
+                    <p class="endereco-nome">Rua Regina Cabalau Mendoça, 18 - Vila Bela Vista, Suzano - SP, 08664-140
+                    </p>
                 </div>
             </div>
         </section>
     </footer>
+
+    
+    
 </body>
 
 </html>
