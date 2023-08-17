@@ -32,22 +32,6 @@
               
         </nav>
 
-<script>
-        function mostraMenu() {
-            var menu = document.getElementById("menu");
-            var icone = document.getElementById("icone");
-
-            if (getComputedStyle(menu).display == 'none') {
-                menu.style.display = "flex";
-                icone.classlist.remove("fa-bars");
-                icone.classlist.add("fa-times");
-            } else {
-                menu.style.display = "none";
-                icone.classlist.remove("fa-times")
-                icone.classlist.add("fa-bars")
-            }
-        }
-    </script>
 
 
     </header>
@@ -208,7 +192,23 @@
         </section>
     </footer>
 
-    
+    <script>
+        function mostraMenu() {
+            var menu = document.getElementById("menu");
+            var icone = document.getElementById("icone");
+
+            if (getComputedStyle(menu).display == 'none') {
+                menu.style.display = "flex";
+                icone.classlist.remove("fa-bars");
+                icone.classlist.add("fa-times");
+            } else {
+                menu.style.display = "none";
+                icone.classlist.remove("fa-times")
+                icone.classlist.add("fa-bars")
+            }
+        }
+    </script>
+
     
 </body>
 
