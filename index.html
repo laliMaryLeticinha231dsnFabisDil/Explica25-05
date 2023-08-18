@@ -191,25 +191,22 @@
             </div>
         </section>
     </footer>
-
-    <script>
-        function mostraMenu() {
-            var menu = document.getElementById("menu");
-            var icone = document.getElementById("icone");
-
-            if (getComputedStyle(menu).display == 'none') {
-                menu.style.display = "flex";
-                icone.classlist.remove("fa-bars");
-                icone.classlist.add("fa-times");
-            } else {
-                menu.style.display = "none";
-                icone.classlist.remove("fa-times")
-                icone.classlist.add("fa-bars")
-            }
-        }
-    </script>
-
+<script>
+    function mostraMenu() {
+        var menu = document.querySelector(".menu"); // Use querySelector para selecionar a classe correta
+        var icone = document.getElementById("icone");
     
+        if (getComputedStyle(menu).display === 'none') {
+            menu.style.display = "flex";
+            icone.classList.remove("fa-bars"); // Use classList em vez de classlist
+            icone.classList.add("fa-times"); // Use classList em vez de classlist
+        } else {
+            menu.style.display = "none";
+            icone.classList.remove("fa-times"); // Use classList em vez de classlist
+            icone.classList.add("fa-bars"); // Use classList em vez de classlist
+        }
+    }
+    </script>
 </body>
 
 </html>

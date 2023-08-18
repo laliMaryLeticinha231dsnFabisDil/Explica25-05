@@ -1,19 +1,30 @@
-.menu{
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: rgba(48, 48, 48, 0.9);
-    position: absolute;
-    top: 0px;
-    left: 0;
-    height: 300px;
-    width: 100%;
-}
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column; /* Empilhar os itens verticalmente */
+        position: absolute;
+        top: 60px; /* Ajuste a altura conforme necessário */
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        z-index: 100;
+    }
 
-.menu-barras{
-    display: initial;
-}
-#icone{
-    color: white;
-    font-size: 30px;
+    .item {
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+    .item:hover {
+        background-color: #F8F8F8;
+    }
+
+    .menu-barras {
+        display: block;
+    }
 }
